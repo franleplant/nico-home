@@ -32,6 +32,9 @@ module.exports = React.createClass({
         <div className="Content">
           <RouteHandler/>
         </div>
+
+
+        <footer>This is a footer</footer>
       </div>
     );
   }

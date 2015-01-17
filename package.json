@@ -4,12 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "watchify src/index.js -d -o bundle.js -v"
   },
   "author": "franleplant@gmail.com",
   "license": "MIT",
   "dependencies": {
     "flux": "^2.0.1",
-    "react": "^0.12.2"
+    "react": "^0.12.2",
+    "react-router": "^0.11.6"
+  },
+  "devDependencies": {
+    "browserify": "^8.1.1",
+    "reactify": "^0.17.1",
+    "watchify": "^2.2.1"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
   }
 }
